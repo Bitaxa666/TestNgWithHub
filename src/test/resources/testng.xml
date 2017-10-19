@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+    <!--
+    <test name="Test case on IE">
+        <parameter name="selenium.browser" value="ie" />
+        <classes>
+            <class name="myprojects.automation.webinar5.tests.LoginTest" />
+        </classes>
+    </test>
+    <test name="Test case on ChromeMobile">
+        <parameter name="selenium.browser" value="chromeMobile" />
+       <parameter name="selenium.hub"     value="http://localhost:4444/wd/hub" />
+        <classes>
+            <class name="myprojects.automation.webinar5.tests.LoginTest" />
+        </classes>
+    </test>-->
+
+    <test name="Test case on Chrome (Remote execution)">
+        <parameter name="selenium.browser" value="chrome" />
+        <!-- <parameter name="selenium.hub"     value="http://localhost:4444/wd/hub" />-->
+        <classes>
+            <class name="myprojects.automation.webinar5.tests.LoginTest" />
+        </classes>
+    </test>
+</suite>
